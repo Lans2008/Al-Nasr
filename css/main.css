@@ -1,0 +1,1038 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* body,
+html body {
+  overflow-x: hidden;
+}
+* button,
+html button {
+  cursor: pointer;
+  font-family: "Nunito";
+}
+* h1,
+* h2,
+* h3,
+html h1,
+html h2,
+html h3 {
+  font-family: "Kufam";
+}
+* p,
+html p {
+  font-family: "Nunito";
+}
+* ul li a,
+html ul li a {
+  font-family: "Nunito";
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  overflow-x: hidden;
+}
+header .logo {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  color: #1da599;
+  font-weight: 100;
+  padding: 0.05rem;
+}
+header .logo h1 {
+  margin-left: 0.5rem;
+}
+header .logo img {
+  width: 20%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  color: #525252;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+header button {
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #ffc265;
+  border: none;
+  color: #3f3f3f;
+  border-radius: 10px;
+  padding: 0 2rem;
+}
+
+#hero {
+  width: 100%;
+  display: flex;
+  padding: 0 3rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+#hero .hero-left {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+#hero .hero-left span {
+  margin-bottom: 1rem;
+  background-color: #c1fffa;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+}
+#hero .hero-left span p {
+  color: #1da599;
+}
+#hero .hero-left h1 {
+  color: #4a4a4a;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+#hero .hero-left > p {
+  color: #454545;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+#hero .hero-left button {
+  padding: 2rem;
+  background-color: #ffc265;
+  color: #3f3f3f;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 2.3rem 0;
+}
+#hero .hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
+#hero .hero-right img {
+  width: 70%;
+}
+
+#about-us {
+  background-color: #f3fffe;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  padding-top: 8rem;
+  overflow-x: hidden;
+}
+#about-us figure {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-us figure img {
+  width: 90%;
+}
+#about-us article {
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-direction: column;
+}
+#about-us article h1 {
+  font-size: 3rem;
+  color: #4a4a4a;
+}
+#about-us article p {
+  color: #454545;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+#about-us article .info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  color: #454545;
+  font-family: "Nunito";
+  font-weight: 600;
+}
+#about-us article .info img {
+  margin-right: 1rem;
+}
+#about-us article .about-button {
+  display: flex;
+}
+#about-us article .about-button .btn-satu {
+  background-color: #ffc265;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+#about-us article .about-button .btn-dua {
+  font-weight: bold;
+  margin-left: 2rem;
+  background-color: white;
+  color: #ffc265;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: 2px solid #ffc265;
+}
+
+#package {
+  width: 100%;
+  padding: 3rem;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+#package .package-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+#package .package-header h1 {
+  font-size: 2.7rem;
+  color: #3f3f3f;
+  margin-bottom: 1rem;
+}
+#package .package-header p {
+  font-size: 1.5rem;
+  color: #454545;
+  line-height: 1.2;
+}
+#package .package-container {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#package .package-container .package-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: 20rem;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#package .package-container .package-card .package-image {
+  width: 100%;
+  padding: 1.5rem;
+  padding-bottom: 1rem;
+}
+#package .package-container .package-card .package-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+#package .package-container .package-card .package-desc {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  font-weight: bold;
+  padding: 1.5rem 1.5rem;
+}
+#package .package-container .package-card .package-desc .package-span {
+  display: flex;
+}
+#package .package-container .package-card .package-desc .package-span img {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+#package .package-container .package-card .package-desc .package-span .flight {
+  margin-left: 0;
+}
+#package .package-container .package-card .package-desc h2 {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+#package .package-container .package-card .package-desc p {
+  font-family: "Nunito";
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  color: #454545;
+}
+#package .package-container .package-card .package-desc p b {
+  color: #1da599;
+}
+#package .package-container .package-card .package-desc button {
+  background-color: white;
+  border: 1px solid #ffc265;
+  padding: 0.7rem 1.5rem;
+  color: #ffc265;
+  border-radius: 5px;
+}
+#package figcaption {
+  width: 90%;
+  color: #ffc265;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  align-items: center;
+  font-weight: 500;
+}
+#package figcaption h2 {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+#package figcaption span {
+  background-color: #c1fffa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  color: #1da599;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+#package #soon-program {
+  color: #1da599;
+  font-family: "Kufam";
+  font-weight: 500;
+}
+
+#airways {
+  display: flex;
+  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  overflow-x: scroll;
+}
+
+.container-airways {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
+
+.airways-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  width: 40rem;
+  margin-right: 2rem;
+}
+.airways-info h2 {
+  width: 100%;
+  color: #4a4a4a;
+  font-size: 1.8rem;
+}
+.airways-info p {
+  color: #454545;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.airways-info span {
+  display: flex;
+  padding: 0.3rem 1rem;
+  align-items: center;
+  background-color: #c1fffa;
+  border-radius: 50px;
+  color: #1da599;
+}
+.airways-info span p {
+  margin-bottom: 0;
+}
+.airways-info span img {
+  margin-right: 5px;
+}
+
+.logo-plane {
+  display: flex;
+}
+.logo-plane .airplane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+.logo-plane img {
+  width: 15rem; /* Ensure images take up full width */
+  /* Maintain aspect ratio and cover container */
+}
+
+#facilities {
+  background-color: #f3fffe;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+#facilities .facilities-header {
+  padding: 4rem;
+  padding-bottom: 3rem;
+  width: 65%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#facilities .facilities-header h1 {
+  color: #4a4a4a;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#facilities .facilities-header p {
+  color: #454545;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+#facilities .container-facilities {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+#facilities .container-facilities .facilities-card {
+  width: 18rem;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#facilities .container-facilities .facilities-card .facilities-img {
+  width: 30%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#facilities .container-facilities .facilities-card .facilities-img img {
+  width: 100%;
+}
+#facilities .container-facilities .facilities-card .facilities-desc {
+  padding: 1rem;
+  width: auto;
+}
+#facilities .container-facilities .facilities-card .facilities-desc h2 {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+#facilities .container-facilities .facilities-card .facilities-desc p {
+  color: #454545;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+#testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 3rem;
+  padding-top: 5rem;
+  background-color: white;
+  overflow-x: hidden;
+}
+#testimonials .testimonials-header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+#testimonials .testimonials-header h1 {
+  text-align: right;
+  font-size: 3rem;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+}
+#testimonials .testimonials-header p {
+  font-size: 1rem;
+  color: #454545;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+#testimonials .testimonials-container {
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+#testimonials .testimonials-container .testimonials-card {
+  width: 28rem;
+  display: flex;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#testimonials .testimonials-container .testimonials-card .testimonials-img {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+#testimonials .testimonials-container .testimonials-card .testimonials-img span {
+  margin-top: 1rem;
+  background-color: #c1fffa;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#testimonials .testimonials-container .testimonials-card .testimonials-img span img {
+  width: 35%;
+}
+#testimonials .testimonials-container .testimonials-card .testimonials-img span h3 {
+  color: #1da599;
+  font-size: 0.8rem;
+}
+#testimonials .testimonials-container .testimonials-card .testimonials-desc {
+  width: auto;
+}
+#testimonials .testimonials-container .testimonials-card .testimonials-desc h3 {
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1da599;
+  background-color: #c1fffa;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 0.5rem;
+}
+#testimonials .testimonials-container .testimonials-card .testimonials-desc h2 {
+  color: #4a4a4a;
+}
+#testimonials .testimonials-container .testimonials-card .testimonials-desc p {
+  line-height: 1.5;
+  color: #454545;
+  font-size: 0.9rem;
+}
+
+#gallery {
+  width: 100%;
+  background-color: #f3fffe;
+  padding: 3rem 2rem;
+  overflow-x: hidden;
+}
+#gallery .gallery-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#gallery .gallery-header h1 {
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+}
+#gallery .gallery-header p {
+  text-align: center;
+  width: 40%;
+  color: #454545;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+#gallery .gallery-img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#gallery .gallery-img .gallery-lg {
+  width: 40%;
+}
+#gallery .gallery-img .gallery-lg img {
+  cursor: pointer;
+  width: 100%;
+}
+#gallery .gallery-img .container-sm {
+  overflow: hidden;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#gallery .gallery-img .container-sm .gallery-sm {
+  width: 20rem;
+  overflow: hidden;
+}
+#gallery .gallery-img .container-sm .gallery-sm img {
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #1da599;
+  padding: 4rem;
+  padding-bottom: 0;
+  overflow-x: hidden;
+}
+footer .footer-header {
+  width: 100%;
+  display: flex;
+  padding-bottom: 2rem;
+}
+footer .footer-header .footer-logo img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+footer .footer-header .footer-logo p {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+footer .footer-header .footer-logo,
+footer .footer-header .quicklink,
+footer .footer-header .footer-umrah,
+footer .footer-header .footer-hajj,
+footer .footer-header .footer-office {
+  width: 20%;
+  margin-right: 1.2rem;
+}
+footer .footer-header .footer-logo h2,
+footer .footer-header .quicklink h2,
+footer .footer-header .footer-umrah h2,
+footer .footer-header .footer-hajj h2,
+footer .footer-header .footer-office h2 {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+footer .footer-header .footer-logo ul li,
+footer .footer-header .quicklink ul li,
+footer .footer-header .footer-umrah ul li,
+footer .footer-header .footer-hajj ul li,
+footer .footer-header .footer-office ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+footer .footer-header .footer-logo ul li a,
+footer .footer-header .quicklink ul li a,
+footer .footer-header .footer-umrah ul li a,
+footer .footer-header .footer-hajj ul li a,
+footer .footer-header .footer-office ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .copyright {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+footer .copyright p {
+  color: white;
+}
+footer .copyright .media-link img {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+  }
+  header .logo h1 {
+    font-size: 1.5rem;
+  }
+  header .logo img {
+    width: 15%;
+  }
+  header nav {
+    width: 55%;
+  }
+  header nav ul li a {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  header button {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+  }
+  #hero .hero-left h1 {
+    font-size: 2rem;
+  }
+  #hero .hero-left p {
+    font-size: 1rem;
+  }
+  #hero .hero-left button {
+    margin: 1rem 0;
+  }
+  #about-us {
+    padding-top: 4rem;
+  }
+  #about-us figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about-us article h1 {
+    font-size: 2rem;
+  }
+  #about-us article p {
+    font-size: 1rem;
+  }
+  #about-us article .info {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+  #about-us article .about-button .btn-satu {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #about-us article .about-button .btn-dua {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #package .package-header {
+    width: 60%;
+  }
+  #package .package-header h1 {
+    font-size: 2rem;
+  }
+  #package .package-header p {
+    font-size: 1rem;
+  }
+  #facilities .facilities-header {
+    width: 70%;
+  }
+  #facilities .facilities-header h1 {
+    font-size: 2rem;
+  }
+  #facilities .facilities-header p {
+    font-size: 1rem;
+  }
+  #testimonials .testimonials-header h1 {
+    font-size: 2rem;
+  }
+  #testimonials .testimonials-header p {
+    font-size: 1rem;
+  }
+  #testimonials .testimonials-container .testimonials-card {
+    width: 20rem;
+  }
+  #testimonials .testimonials-container .testimonials-card .testimonials-img {
+    width: 35%;
+    margin-right: 0.5rem;
+  }
+  #testimonials .testimonials-container .testimonials-card .testimonials-img img {
+    width: 90%;
+  }
+  #testimonials .testimonials-container .testimonials-card .testimonials-desc {
+    width: 60%;
+  }
+  #testimonials .testimonials-container .testimonials-card .testimonials-desc h2 {
+    font-size: 1.2rem;
+  }
+  #testimonials .testimonials-container .testimonials-card .testimonials-desc p {
+    font-size: 0.8rem;
+  }
+  #gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #gallery .gallery-header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #gallery .gallery-header h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  #gallery .gallery-header p {
+    width: 80%;
+    font-size: 1rem;
+  }
+  #gallery .gallery-img .container-sm .gallery-sm {
+    width: 13rem;
+  }
+  footer {
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+  footer .footer-header .footer-logo h2,
+  footer .footer-header .quicklink h2,
+  footer .footer-header .footer-umrah h2,
+  footer .footer-header .footer-hajj h2,
+  footer .footer-header .footer-office h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  footer .footer-header .footer-logo ul li a,
+  footer .footer-header .quicklink ul li a,
+  footer .footer-header .footer-umrah ul li a,
+  footer .footer-header .footer-hajj ul li a,
+  footer .footer-header .footer-office ul li a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0.8rem 1rem;
+  }
+  header .logo {
+    justify-content: start;
+  }
+  header .logo h1 {
+    margin-left: 0.5rem;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  header nav {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  #hero {
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  #hero .hero-left span {
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  #hero .hero-left span p {
+    font-size: 0.6rem;
+  }
+  #hero .hero-left h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  #hero .hero-left p {
+    font-size: 0.7rem;
+  }
+  #hero .hero-left button {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.8rem;
+  }
+  #hero .hero-right img {
+    width: 90%;
+  }
+  #about-us {
+    padding: 0.5rem;
+    padding-top: 3rem;
+  }
+  #about-us figure img {
+    width: 100%;
+  }
+  #about-us article {
+    width: 60%;
+  }
+  #about-us article h1 {
+    font-size: 1.1rem;
+  }
+  #about-us article p {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  #about-us article .info {
+    display: none;
+    margin-right: 0.5rem;
+    font-size: 0.6rem;
+  }
+  #about-us article .info img {
+    margin-right: 0.5rem;
+    width: 15%;
+  }
+  #about-us article .about-button .btn-satu {
+    font-size: 0.6rem;
+    padding: 0.5rem 1rem;
+  }
+  #about-us article .about-button .btn-dua {
+    margin-left: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.5rem 1.2rem;
+  }
+  #package {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+  #package .package-header {
+    width: 80%;
+  }
+  #package .package-header h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  #package .package-header p {
+    font-size: 0.8rem;
+  }
+  #package .package-container {
+    margin-top: 0;
+  }
+  #package .package-container #soon-program {
+    padding: 5rem 1rem;
+  }
+  #airways {
+    padding: 1rem 0;
+  }
+  #airways .airways-info h2 {
+    font-size: 1.5rem;
+  }
+  .logo-plane img {
+    width: 10rem;
+  }
+  #facilities .facilities-header {
+    padding: 1rem;
+  }
+  #facilities .facilities-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #facilities .facilities-header p {
+    font-size: 0.7rem;
+  }
+  #testimonials {
+    padding: 1rem;
+  }
+  #testimonials .testimonials-header {
+    width: 70%;
+  }
+  #testimonials .testimonials-header h1 {
+    font-size: 1.3rem;
+  }
+  #testimonials .testimonials-header p {
+    font-size: 0.8rem;
+    text-align: end;
+    margin-bottom: 0;
+  }
+  #testimonials .testimonials-container .testimonials-card .testimonials-desc h3 {
+    font-size: 0.6rem;
+  }
+  #gallery {
+    padding: 1rem;
+  }
+  #gallery .gallery-header {
+    padding-top: 3rem;
+  }
+  #gallery .gallery-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #gallery .gallery-header p {
+    font-size: 0.8rem;
+  }
+  #gallery .gallery-img .container-sm .gallery-sm {
+    width: 5rem;
+  }
+  footer {
+    padding: 0.5rem;
+  }
+  footer .footer-header {
+    justify-content: space-between;
+  }
+  footer .footer-header .footer-logo {
+    width: 40%;
+  }
+  footer .footer-header .footer-logo p {
+    font-size: 0.6rem;
+  }
+  footer .footer-header .footer-logo,
+  footer .footer-header .quicklink,
+  footer .footer-header .footer-umrah,
+  footer .footer-header .footer-hajj,
+  footer .footer-header .footer-office {
+    margin-right: 0.5rem;
+  }
+  footer .footer-header .footer-logo h2,
+  footer .footer-header .quicklink h2,
+  footer .footer-header .footer-umrah h2,
+  footer .footer-header .footer-hajj h2,
+  footer .footer-header .footer-office h2 {
+    font-size: 0.6rem;
+  }
+  footer .footer-header .footer-logo ul li,
+  footer .footer-header .quicklink ul li,
+  footer .footer-header .footer-umrah ul li,
+  footer .footer-header .footer-hajj ul li,
+  footer .footer-header .footer-office ul li {
+    margin: 0;
+  }
+  footer .footer-header .footer-logo ul li a,
+  footer .footer-header .quicklink ul li a,
+  footer .footer-header .footer-umrah ul li a,
+  footer .footer-header .footer-hajj ul li a,
+  footer .footer-header .footer-office ul li a {
+    font-size: 0.5rem;
+    margin: 0;
+  }
+  footer .footer-header .footer-umrah,
+  footer .footer-header .footer-hajj {
+    display: none;
+  }
+  footer .copyright {
+    padding: 1rem 0;
+  }
+  footer .copyright p {
+    font-size: 0.6rem;
+  }
+  footer .copyright .media-link img {
+    width: 15%;
+    margin-left: 0.5rem;
+  }
+}/*# sourceMappingURL=main.css.map */
